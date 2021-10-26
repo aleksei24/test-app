@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style/style.css" />
+        <script src="./script/script.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="app" class="app">
+                <header id="header" class="header">
+                    <label for="search"></label>
+                    <input title="search" class="header__input" type="text" name="" id="search" />
+                    <button type="button" class="header__btn btn" id="searchBtn">Search</button>
+                </header>
+
+                <div class="meals" id="meals"></div>
+                <div class="popup-container hidden" id="meal-popup">
+                    <div class="popup">
+                        <button type="button" class="close-btn" id="close-btn">close</button>
+                        <div class="meal-info" id="meal-info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
