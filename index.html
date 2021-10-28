@@ -4,13 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe API</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="./style/style.css" />
     <script src="./script/script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
-      <div id="app" class="app"></div>
+      <div id="app" class="app">
+        <div class="pw">
+          <header class="pw__header header-pw">
+            <p class="header-pw__field"></p>
+            <button type="button" id="copy-btn" class="header-pw__copy">Copy</button>
+          </header>
+          <main class="pw__main main-pw">
+            <div class="main-pw__form-control">
+              <label for="length">Password Length</label>
+              <input type="number" name="length" id="length" title="chb" min="4" max="20" />
+            </div>
+            <div class="main-pw__form-control">
+              <label for="upper">Contain Uppercase Letters</label>
+              <input type="checkbox" name="upper" id="upper" title="chb" />
+            </div>
+            <div class="main-pw__form-control">
+              <label for="lower">Contain Lowercase Letters</label>
+              <input type="checkbox" name="lower" id="lower" title="chb" />
+            </div>
+            <div class="main-pw__form-control">
+              <label for="number">Contain Numbers</label>
+              <input type="checkbox" name="number" id="number" title="chb" />
+            </div>
+            <div class="main-pw__form-control">
+              <label for="symbol">Contain Symbols</label>
+              <input type="checkbox" name="symbol" id="symbol" title="chb" />
+            </div>
+          </main>
+        </div>
+      </div>
     </div>
   </body>
 </html>
