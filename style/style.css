@@ -70,10 +70,61 @@ button {
 /* ============================= */
 
 .app {
-  width: 400px;
+  width: 100vw;
   margin: 0 auto;
   padding: 10px;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(151, 187, 101);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* ============== */
+.pw {
+  background-color: rgb(6, 90, 6);
+  color: antiquewhite;
+  padding: 15px;
+  width: 400px;
+}
+.pw__header {
+  padding: 0.5rem;
+  border: 2px solid wheat;
+  border-radius: 5px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.pw__header:hover .header-pw__copy {
+  opacity: 1;
+}
+.header-pw__copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0%, 75%);
+  padding: 5px 10px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.header-pw__field {
+  font-size: 21px;
+}
+.pw__main {
+  padding: 0.5rem;
+}
+.main-pw__form-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.main-pw__generate {
+  display: block;
+  background-color: rgb(160, 43, 0);
+  color: bisque;
+  padding: 10px;
+  width: 100%;
+  font-size: 21px;
+  font-weight: bold;
+}

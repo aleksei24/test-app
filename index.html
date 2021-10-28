@@ -13,13 +13,21 @@
       <div id="app" class="app">
         <div class="pw">
           <header class="pw__header header-pw">
-            <p class="header-pw__field">gghrjgngjfbfi</p>
+            <p class="header-pw__field" id="pw-field">gghrjgngjfbfi</p>
             <button type="button" id="copy-btn" class="header-pw__copy">Copy</button>
           </header>
           <main class="pw__main main-pw">
             <div class="main-pw__form-control">
               <label for="length">Password Length</label>
-              <input type="number" name="length" id="length" title="chb" min="4" max="20" />
+              <input
+                type="number"
+                name="length"
+                id="length"
+                title="chb"
+                min="4"
+                max="20"
+                value="12"
+              />
             </div>
             <div class="main-pw__form-control">
               <label for="upper">Contain Uppercase Letters</label>
