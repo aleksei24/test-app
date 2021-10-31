@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 *,
 *::before,
@@ -70,10 +71,71 @@ button {
 /* ============================= */
 
 .app {
+  padding: 15px 10px;
   width: 400px;
   margin: 0 auto;
+}
+.app__title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+.app__review {
+  background-color: #fff;
   padding: 10px;
-  background-color: rgb(209, 209, 209);
-  min-height: 100vh;
+  border: 2px solid pink;
+  border-radius: 10px;
 }
 /* ============== */
+.rev-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rev-app__img {
+  /* width: 120px; */
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.rev-app__author {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.rev-app__job {
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: rgb(12, 139, 139);
+}
+.rev-app__info {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  max-height: 96px;
+  overflow-y: auto;
+}
+.rev-app__btns {
+  width: 100px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rev-app__random {
+  padding: 5px;
+  background-color: rgb(131, 37, 3);
+  color: rgb(255, 254, 254);
+  border-radius: 7px;
+}
+
+/* ================= */
+.btns-rev__prev,
+.btns-rev__next {
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
